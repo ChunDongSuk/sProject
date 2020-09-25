@@ -11,9 +11,9 @@
     <ol>
       {% for s in student_list %}
       <li>
-        <a herf="#none">{{ s.s_name }}</a> 
-        <a herf="#none">수정</a> 
-        <a herf="#none">삭제</a>
+        <a href="{% url 'students:stuDet' s.s_name %}">{{ s.s_name }}</a> 
+        <a href="{% url 'students:stuMod' s.s_name %}">수정</a> 
+        <a href="{% url 'students:stuDel' s.s_name %}">삭제</a> 
       </li>
       {% endfor %}
     </ol>
