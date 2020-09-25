@@ -1,1 +1,1 @@
-# sProject
+# studentsProject
